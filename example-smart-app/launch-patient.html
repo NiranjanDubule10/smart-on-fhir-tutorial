@@ -27,7 +27,8 @@
     <script>
       FHIR.oauth2.authorize({
         'client_id': '4fdfcdd2-7d24-4f5f-a07c-b4f61c447608',
-        'scope':  'patient/Patient.read patient/Observation.read launch/patient online_access openid profile'
+        //'scope':  'patient/Patient.read patient/Observation.read launch/patient online_access openid profile'
+        'scope':  'patient/Patient.read patient/Observation.read'
       });
     </script>
     <div class="spinner">
