@@ -8,8 +8,8 @@
     }
 
     function onReady(smart)  {
-      if (smart.hasOwnProperty('user')) {
-        var patient = smart.user;
+      if (smart.hasOwnProperty('patient')) {
+        var patient = smart.patient;
         var pt = patient.read();
         var obv = smart.patient.api.fetchAll({
                     type: 'Observation',
